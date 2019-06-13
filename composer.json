@@ -1,0 +1,36 @@
+{
+    "name": "webeetle/fattura-elettronica",
+    "description": "Libreria per la generazione e gestione di una fattura elettronica",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Webeetle",
+            "email": "info@webeetle.com",
+            "homepage": "https://www.webeetle.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Webeetle\\FatturaElettronica\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Webeetle\\FatturaElettronica\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=5.5",
+        "ext-xmlwriter": "*",
+        "ext-libxml": "*",
+        "ext-dom": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    }
+}
